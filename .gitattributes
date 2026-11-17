@@ -1,0 +1,19 @@
+# Git LFS tracking configuration for WARNMEW
+# Ensures binary models, spreadsheets, PDFs, and datasets are stored efficiently
+
+# Pre-trained deep learning weights
+*.pt filter=lfs diff=lfs merge=lfs -text
+
+# Pre-trained model configurations and scalers
+*.pkl filter=lfs diff=lfs merge=lfs -text
+
+# Surveillance PDF reports
+*.pdf filter=lfs diff=lfs merge=lfs -text
+
+# Converted Excel files
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+
+# Large unified dataset and time-series caches
+warnmew_training_dataset.csv filter=lfs diff=lfs merge=lfs -text
+weather_cache_v2.csv filter=lfs diff=lfs merge=lfs -text
+trends_cache.csv filter=lfs diff=lfs merge=lfs -text
